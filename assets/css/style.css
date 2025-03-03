@@ -1,7 +1,8 @@
 body {
 	background-color: #ffe4e1;
-	font-size: 14px;
+	font-size: 18px;
 	width: 100%;
+	font-family: 'Calibri'; 
 }
 
 h1 {
@@ -12,11 +13,17 @@ h2 {
 	font-size: 1.5em;
 }
 
+p {
+    font-size: 1.25em; 
+}
+
+
 #page {
 	width: 80%; 
     margin: auto; 
-    background-color: white; 
-    border: 2px solid #333;
+   	background-color: white; 
+	border: 2px solid #333;
+	border-radius: 10px; 
     padding: 20px;
 }
 
@@ -32,10 +39,52 @@ h2 {
 
 table {
     margin: auto;
+	width: 35%
 }
 
 footer {
     text-align: center;
     margin-top: 20px;
     padding: 10px;
+	font-size: 1em; 
+}
+
+.avatar {
+    max-width: 40%; 
+    height: auto;
+    border-radius: 50%; 
+}
+
+.logo {
+    width: 30%
+}
+
+button {
+    background-color: #f8d0d5; 
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1em;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #d63384;
+	color: white;
+}
+
+input, textarea {
+    border-radius: 20px;
+    padding: 10px;
+    width: auto;
+    max-width: 200px;
+    font-size: 1em;
+	height: 15px;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 20px; 
 }

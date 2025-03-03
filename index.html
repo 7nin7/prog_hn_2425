@@ -4,16 +4,17 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="assets/css/style.css">
+		<script src="assets/JS/script.js"></script>
     </head>
 
     <body>
 		<div id="page">
 		
 			<div class="entete">
-				<center><img src="assets/img/avatar.png"/>
+				<img src="assets/img/avatar.png" alt="Avatar" class="avatar"/>
 				<h1 align="center">Nina Sigua</h1>
 				<h2 align="center">Master 1 des Sciences du Langage</h2>
-				<center><img src="assets/img/logo.png" width="20%" />
+				<img src="assets/img/logo.png" width="20%" />
 			</div>
 
 			<div id="aboutme">
@@ -38,6 +39,19 @@
 					<li><i>L'étranger</i>, Albert Camus, Gallimard</li>
 				</ol>
 			</div>
+			
+			<div>
+                <label for="nameInput">Comment vous appelez-vous ?</label>
+                <input type="text" id="nameInput" placeholder="Votre nom">
+                <button id="greetButton" onclick="greetUser()">Bonjour...</button>
+            </div>
+			
+			<div>
+                <button id="toggleHelpButton" onclick="toggleHelp()">Afficher l'aide</button>
+                <div id="helpSection" style="display: none;">
+                    <p>Ici, on va afficher l'aide.</p>
+                </div>
+            </div>
 			
 			<footer>
 				<p><a href="http://www.univ-paris3.fr/">Lien vers le site de Sorbonne Nouvelle.</a></p>
