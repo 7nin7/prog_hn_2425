@@ -18,3 +18,18 @@ function toggleHelp() {
 		button.textContent = "Afficher l'aide";
 		}
 }
+
+ function exercice4() {
+        // Pour récupérer le texte écrit 
+        let texte = document.getElementById('texteExercice4').value;
+        
+        // Pour découper le texte en mots 
+        let mots = texte.split(" ");
+    
+        let resultat = "";
+        mots.forEach(function(mot) {
+            let p = document.createElement("p");
+            p.textContent = mot; 
+            document.getElementById("exercice4Resultat").appendChild(p);
+        });
+    }
